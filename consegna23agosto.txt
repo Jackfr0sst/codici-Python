@@ -1,0 +1,16 @@
+Il programma definiscela funzione assistente_virtuale che, preso in input un comando a scelta tra "Qual è la data di oggi?", 
+"Che ore sono?" e "Come ti chiami?", fornisce in risposta all'utente la data, l'ora o il suo nome ("Assistente Virtuale"). 
+Qualora il comando di input fosse diverso da uno di questi tre, la funzione restituisce la frase "Non ho capito la tua domanda", 
+eccezion fatta per il comando "esci", il quale fa stampare alla funzione "Arrivederci!". Va inoltre menzionato che il programma 
+utilizza la libreria datetime in modo da ottenere le informazioni sulla data e sull'ora corrente.
+Secondo me il programma, vista la limitata quantità di risposte che è in grado di fornire, o meglio, vista la ristretta quantità 
+di domande a cui è in grado di rispondere, dovrebbe presentare un menù per far sapere all'utente quali sono le opzioni. 
+Altrimenti ci si potrebbe ritrovare a fare infinite domande all'assistente virtuale prima di indovinare a quale di queste si può 
+avere risposta.
+In più, esattamente come fatto con "esci", anche comando utente dovrebbe essere ".lower()", poiché non possiamo essere sicuri che
+l'utente utilizzerà sempre la prima lettera maiuscola.
+Inoltre, il programma ritorna e non stampa la risposta, per cui a schermo non è possibile vedere nulla. Return risposta va 
+quindi sostituito con print(risposta). In più il ciclo while True ha bisogno dei due puntini alla fine per poter funzionare.
+Ultimo ma non per importanza, per come funziona il modulo "datetime", per ritornare la data di oggi bisogna utilizzare il 
+comando "datetime.datetime.now()" al posto di datetime.datetoday().
+Una versione del codice con le implementazioni proposte è allegata a questo file.
